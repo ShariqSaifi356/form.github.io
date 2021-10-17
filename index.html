@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <link rel="icon" href="info.ico">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            height: 45px;
+            background-color: black;
+            color: white;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            margin: 6px 14px;
+            font-size: x-large;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        li {
+            display: inline;
+            /* list-style: square inside url(red.png) */
+        }
+
+        nav ul li a:hover {
+            color: lightgrey;
+            transition: .9s;
+        }
+
+        /* .testing{
+            height: 88vh;
+            background-color: white;
+            color: black;
+        } */
+        main {
+            height: 89vh;
+        }
+
+        input[type=text],
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: lightslategray;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: lightslategray;
+        }
+
+        div form {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            font-size: x-large;
+            font-family: 'Baloo Bhai 2', cursive;
+
+        }
+
+
+        footer {
+            font-family: 'Baloo Bhai 2', cursive;
+            background-color: rgb(196, 198, 200);
+            color: black;
+            padding: 8px;
+            text-transform: uppercase;
+        }
+
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">NEWS</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">FEEDBACK</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div>
+            <form action="form.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="india">India</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                </select>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p class="center">Copyright &copy;Mini Project</p>
+    </footer>
+</body>
+
+</html>
